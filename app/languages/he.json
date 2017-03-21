@@ -1,0 +1,14 @@
+{
+  "modal" : {
+    "clean": "נקה",
+    "ok": "אישור",
+    "cancel": "בטל",
+    "emptySearches": "לא נמצאו רשומות"
+  },
+  "form" : {
+    "search": "חפש",
+    "clean": "נקה",
+    "savedSearches": "חיפושים שמורים",
+    "userDetails": "פרטי משתשמש"
+  }
+}

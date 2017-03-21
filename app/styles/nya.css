@@ -1,0 +1,80 @@
+
+body {
+    font-family: arial;
+    font-size: 16px;
+    text-align: right;
+    direction: rtl;
+}
+
+.nya-bs-select.btn-group .dropdown-menu li.selected a .check-mark {
+    color: #5FB6B8;
+}
+
+.sweet-alert .sa-icon.sa-error {
+    border-color: #5FB6B8;
+}
+
+.sweet-alert .sa-icon.sa-error .sa-line {
+    background-color: #5FB6B8 !important;
+
+}
+
+.sweet-alert button {
+    background: #5FB6B8 !important;
+}
+
+.spinner {
+    position: relative;
+    left: 90px;
+}
+
+.green-button {
+    height: 25px;
+    border: 1px solid rgba(72,121,122,.56);
+    border-radius: 3px!important;
+    background: #5fb6b8;
+    box-shadow: 0 2px 0 rgba(70,135,136,.4);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0;
+    color: #fff;
+    padding: 0 12px;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+   background-color: #fff;
+  opacity: 1;
+}
+
+.date-icon {
+  position: relative;
+  left: 25px;
+  top: 2px;
+  color: #5FB6B8;
+}
+
+
+.edit-icon {
+  background-image: url("../images/edit.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.new-icon {
+  background-image: url("../images/new.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.dropdown-toggle:after, .dropdown-toggle.btn:after {
+  display: none;
+}
+

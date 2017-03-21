@@ -1,0 +1,14 @@
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="jumbotron" style="background-color: #fff">
+      <p class="text-muted" ng-bind-html="'form.userDetails' | translate"></p>
+      <ul>
+        <li ng-bind-html="vm.user.name">Name: </li>
+        <li ng-bind="vm.user.balance">Balance: </li>
+        <li ng-bind="vm.user.gender">Gender: </li>
+      </ul>
+      <button class="green-button" ng-click="vm.back()">Back</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-md-11">
+    <form style="margin-bottom: 15px" class="form-inline">
+      <label>חפש לפי שם: </label>
+      <ol class="nya-bs-select" ng-model="vm.model.name" data-live-search="true" title="בחר" actions-box="true" multiple ng-click="vm.fetch()">
+        <img class="spinner" ng-src="images/default.gif" alt="" ng-show="vm.loading">
+        <li nya-bs-option="option in vm.options">
+          <!-- the text content of anchor element will be used for search -->
+          <a>
+            {{ option }}
+            <span class="glyphicon glyphicon-ok check-mark"></span>
+          </a>
+        </li>
+      </ol>
+      <label>חפש לפי רחוב: </label>
+      <ol class="nya-bs-select" ng-model="vm.model.street" data-live-search="true" title="בחר"  actions-box="true" multiple >
+        <li nya-bs-option="option in vm.options2">
+          <!-- the text content of anchor element will be used for search -->
+          <a>
+            {{ option }}
+            <span class="glyphicon glyphicon-ok check-mark"></span>
+          </a>
+        </li>
+      </ol>
+      <input type="text" ng-model="vm.model.date" class="form-control" data-nq-datepicker="" placeholder="datepicker">
+      <span class="date-icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+      <button style="background: #5FB6B8; color: #fff" class="green-button" ng-click="vm.filter()" ng-disabled="vm.searched" ng-bind-html="'form.search' | translate"></button>
+      <button style="background: #5FB6B8; color: #fff" class="green-button" ng-click="vm.deleteSearch()" ng-bind-html="'form.clean' | translate"></button>
+      <button style="background: #5FB6B8; color: #fff" class="green-button" ng-click="vm.savedSearch()" ng-bind-html="'form.savedSearches' | translate"></button>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-11">
+    <div id="grid" ui-grid="vm.gridOptions" dir="rtl"></div>
+  </div>
+  <div class="col-md-1">
+    <ul class="nav-list">
+      <li><button class="nav-buttons">נושאים בטיפול</button></li>
+      <li><button class="nav-buttons">התראות</button></li>
+      <li><button class="nav-buttons">ישיבות</button></li>
+    </ul>
+  </div>
+</div>

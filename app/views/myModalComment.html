@@ -1,0 +1,15 @@
+<div class="modal-header">
+  <h3 class="modal-title" id="modal-title">הערות</h3>
+</div>
+<div class="modal-body" id="modal-body">
+
+    <textarea style="width: 100%;" ng-model="vm.commentCopy.about" placeholder="תוכן הערה:" ng-keyup="vm.clickEvent($event)">
+
+    </textarea>
+
+
+</div>
+<div class="modal-footer">
+  <button class="green-button" type="button" ng-click="vm.ok()">{{'modal.ok' | translate}}</button>
+  <button class="green-button" type="button" ng-click="vm.cancel()">{{'modal.cancel' | translate}}</button>
+</div>
